@@ -12,6 +12,13 @@ from langchain_community.document_loaders import (
     PyPDFDirectoryLoader,
 )
 
+"""
+    For large dataset :-
+        1. Introduce parallel document loading, distributed processing, chunk-level batching, and use scalable vector databases like Pinecone or Weaviate instead of local FAISS.
+        
+        2. Add support for more data sources, implement async loading, introduce caching mechanisms, improve chunking with semantic splitting, and add logging and monitoring for production readiness.
+"""
+
 
 class DocumentProcessor:
     """Handles document loading and processing"""
